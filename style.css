@@ -33,7 +33,8 @@ img {
 }
 
 p {
-  text-align: center
+  text-align: center;
+  color: black;
 }
 
 h1 {
@@ -58,4 +59,10 @@ h3 {
   left: 50%;
   top: 50%;
   margin-left: -150px;
+}
+
+body:not(.en) :lang(en), 
+body:not(.ht) :lang(ht), 
+body:not(.fr) :lang(fr) { 
+    display: none; 
 }

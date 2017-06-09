@@ -12,6 +12,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-color/2.1.2/jquery.color.min.js"></script>
+
 </head>
 
 <body>
@@ -28,14 +29,13 @@
       <div>
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav  navbar-right" ;>
-            <li><a href="#center">home</a></li>
-            <li><a href="#about">about</a></li>
-            <li><a href="#links">links</a></li>
-            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">intro<span class="caret"></span></a>
+            <li><a href="#">home</a></li>
+            <li><a href="https://www.facebook.com/kafekombit/">facebook</a></li>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#about">about<span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="#kreyol">kreyol</a></li>
-                <li><a href="#francais">francais</a></li>
-                <li><a href="#english">english</a></li>
+                <li onclick="document.body.className='ht'"><a href="#kreyol">kreyol</a></li>
+                <li onclick="document.body.className='fr'"><a href="#francais">francais</a></li>
+                <li onclick="document.body.className='en'"><a href="#english">english</a></li>
               </ul>
             </li>
           </ul>
@@ -57,29 +57,32 @@
       </div>
       <h2 style="font-weight: light;">The Ethereum powered pay it forward initiative</h2>
       <p><img style="width:50%; margin:auto" src="https://cdn.discordapp.com/attachments/234428176552427520/311099665321820161/kafekombit.png"></p>
-      <h3 style="text-decoration: underline;font-weight: bold;"> Athens launch date </h3>
+      <h3 style="text-decoration: underline;font-weight: bold;"> Token launch date </h3>
       <h3 style="text-decoration: underline;font-weight: bold;"> June 12 2017 1am </h3>
       <p></p>
-      <p>.</p>
+      <p></p>
 
     </div>
   </div>
-  <br></br><br></br>
+  <br></br><br></br><br></br><br></br>
   <div class="row">
-    <div class="col-md-4"></div>
-    <div class="col-md-4">
-      <div id="kreyol"> Kafe Kombit An 1821, "Grèce" te voye an ayiti yon moun pou te vin chèche èd nan batay yo t'ap mennen pou te jwenn endepandans yo anba dominasyon pouvwa "Ottoman". Ayiti, nan move enpas, t'ap batay toujou kont dèt li yo depi lè l' te fin pran endepandans
-        li, te reponn ak apèl yo, li te voye ba yo soutyen moral li ansanm ak 25 tònn kafe lakay li. Kafe Kombit. (Menm Chenn Fondatè yo) Kafe Kombit se yon zouti Pou devlòpman ki rele 'KOMBIT' (KBT). Kombit vini sou fòm yon kob avèk anpil mwayen Pou
-        vòt demonkratik Pou anpil pwojè devlòpman zafè ki sanble an ayiti.</div>
-      <br></br>
-      <div id="francais">Kafe Kombit en 1821, Grèce a envoyé en Haïti un plaidoyer pour trouver de l'aide dans leurs combats pour l'indépendance sous le règne de l'Empire Ottoman. Haïti, sur les remparts, luttant encore contre les rançons depuis sa propre indépendance,
-        a répondu a l'appel et a envoyé son soutien moral y compris 25 tonnes de leur café. Kafe Kombit (FONDATION BLOCS CHAINES COMMUNES) Kafe Kombit présente un instrument de développement appelé 'KOMBIT' (KBT). Konbit est proposé comme devise numerique
-        avec des mécanismes de vote démocratique pour des projets de développement d'affaires communs en Haïti.</div>
-      <br></br>
-      <div id="english"> Kafe Kombit In 1821, Greece sent a plea to Haiti for help in their struggles for Independence from the Ottoman Empire rule. Haiti, embattled and still struggling against ransoms since its own Independence, answered the call and sent moral support
-        including 25 tons of coffee. </div>
+    <div class="col-md-3"></div>
+    <div id="#about" class="col-md-6">
+
+      <p id="kreyol"> <a href="" lang="ht">An 1821, "Grèce" te voye an ayiti yon moun pou te vin chèche èd nan batay yo t'ap mennen pou te jwenn endepandans yo anba dominasyon pouvwa "Ottoman". Ayiti, nan move enpas, t'ap batay toujou kont dèt li yo depi lè l' te fin pran endepandans li,
+          te reponn ak apèl yo, li te voye ba yo soutyen moral li ansanm ak 25 tònn kafe lakay li. Kafe Kombit. (Menm Chenn Fondatè yo) Kafe Kombit se yon zouti Pou devlòpman ki rele 'KOMBIT' (KBT). Kombit vini sou fòm yon kob avèk anpil mwayen Pou vòt
+          demonkratik Pou anpil pwojè devlòpman zafè ki sanble an ayiti.</a> </p>
+
+      <p id="francais"><a href="" lang="fr">En 1821, Grèce a envoyé en Haïti un plaidoyer pour trouver de l'aide dans leurs combats pour l'indépendance sous le règne de l'Empire Ottoman. Haïti, sur les remparts, luttant encore contre les rançons depuis sa propre indépendance, a répondu
+          a l'appel et a envoyé son soutien moral y compris 25 tonnes de leur café. Kafe Kombit (FONDATION BLOCS CHAINES COMMUNES) Kafe Kombit présente un instrument de développement appelé 'KOMBIT' (KBT). Kombit est proposé comme devise numerique avec
+          des mécanismes de vote démocratique pour des projets de développement d'affaires communs en Haïti.</a></p>
+
+      <p id="english"> <a href="" lang="en">In 1821, Greece sent a plea to Haiti for help in their struggles for Independence from the Ottoman Empire rule. Haiti, embattled and still struggling against ransoms since its own Independence, answered the call and sent moral support including
+          25 tons of coffee. Kafe Kombit: ‘Kombit’ aka 'Konbit' is a Haitian Kreyol term used to define a community working together towards a common goal. Kombit platform Tokens was developed by Haitian Canadian architectural technologist, Steve Michel
+          and presented by Finnish visual artist Petri Saarikko during the Platforms Project in Athens in May 2017. Kombit is proposed as a cryptocurrency backed token with democratic voting to fund development projects in Haiti.</a></p>
+
     </div>
-        <div class="col-md-4"></div>
+    <div class="col-md-3"></div>
 
   </div>
 
