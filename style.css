@@ -32,11 +32,6 @@ img {
   height: auto;
 }
 
-p {
-  text-align: center;
-  color: black;
-}
-
 h1 {
   text-align: center;
   font-weight: bold;
@@ -50,6 +45,10 @@ h2 {
 h3 {
   text-align: center;
   font-weight: 900;
+}
+
+p {
+  text-align: center;
 }
 
 #center {
@@ -66,3 +65,8 @@ body:not(.ht) :lang(ht),
 body:not(.fr) :lang(fr) { 
     display: none; 
 }
+
+#about {
+   color: yellow;
+}
+
