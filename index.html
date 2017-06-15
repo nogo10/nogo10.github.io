@@ -12,12 +12,23 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-color/2.1.2/jquery.color.min.js"></script>
+  <script>
+  function myFunction() {
+    var x = document.getElementById('myDIV');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+  </script>
 
 </head>
 
 <body>
-  <nav class="navbar navbar-inverse navbar-fixed-top ">
+  
     <div class="container-fluid">
+      <nav class="navbar navbar-inverse navbar-fixed-top ">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
           <span class="icon-bar"></span>
@@ -31,7 +42,7 @@
           <ul class="nav navbar-nav  navbar-right";>
             <li><a href="#">home</a></li>
             <li><a href="https://www.facebook.com/kafekombit/">facebook</a></li>
-            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#lang">lang<span class="caret"></span></a>
+            <li onclick="myFunction()" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#lang">lang<span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li onclick="document.body.className='ht'"><a href="#kreyol">kreyol</a></li>
                 <li onclick="document.body.className='fr'"><a href="#francais">francais</a></li>
