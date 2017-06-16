@@ -22,6 +22,24 @@
         x.style.display = 'none';
       }
     }
+    
+   
+    window.addEventListener('load', function() {
+      var Web3 = require('web3');
+  // Checking if Web3 has been injected by the browser (Mist/MetaMask)
+  if (typeof web3 !== 'undefined') {
+    // Use Mist/MetaMask's provider
+    window.web3 = new Web3(web3.currentProvider);
+  } else {
+    console.log('No web3? You should consider trying MetaMask!')
+    // fallback - use your fallback strategy (local node / hosted node + in-dapp id mgmt / fail)
+    window.web3 = new Web3(new Web3.providers.HttpProvider("https://api.myetherapi.com/rop"));
+  }
+
+  // Now you can start your app & access web3 freely:
+  startApp()
+
+});
   </script>
 
 </head>
@@ -68,7 +86,7 @@
       </div>
       <h2 style="font-weight: light;">The Ethereum powered pay it forward initiative</h2>
       <p><img style="width:50%; margin:auto" src="https://cdn.discordapp.com/attachments/234428176552427520/311099665321820161/kafekombit.png"></p>
-      <h3 style="text-decoration: underline;font-weight: bold;"> Token launch done </h3>
+      <h3 style="text-decoration: font-weight: bold;"> Token launch is done </h3>
       <h3 style="text-decoration: underline;font-weight: bold;"> <a href="https://ropsten.etherscan.io/address/0x284057ca9b16d0bbc8722601df1eede6e56a60d9">ropsten kombit coin address</a></h3>
       <p></p>
       <p></p>
@@ -81,7 +99,7 @@
     <div class="col-md-4">
       <div style="width: 100%">
         <input type="text" class="userData text form-control" value="paste the json data from the qr code reader result">
-        <button id="kbt" class="userData btn-lg" style="width: 100%; background:#111111; color:white"><a href id="eng">Check your Kombit coin balance</a><a href="" lang="en" style="visibility: visible">Check your Kombit coin balance</a><a href="" lang="fr">Vérifiez vos Token Kombit</a><a href="" lang="ht">Checke balans kob kombit</a></button>
+        <button id="kbt" class="userData btn-lg" style="width: 100%; background:#111111; color:white"><a href id="eng">Check your Kombit (Kbt) balance</a><a href="" lang="en" style="visibility: visible">Check your Kombit coin balance</a><a href="" lang="fr">Vérifiez vos Kombits</a><a href="" lang="ht">Checke balans kob kombit</a></button>
       </div>
       <div class="col-md-4"></div>
     </div>
@@ -97,8 +115,7 @@
       <p id="francais"><a href="" lang="fr" style="color:black">En 1821, Grèce a envoyé en Haïti un plaidoyer pour trouver de l'aide dans leurs combats pour l'indépendance sous le règne de l'Empire Ottoman. Haïti, sur les remparts, luttant encore contre les rançons depuis sa propre indépendance, a répondu a l'appel et a envoyé son soutien moral y compris 25 tonnes de leur café. Kafe Kombit (FONDATION BLOCS CHAINES COMMUNES) Kafe Kombit présente un instrument de développement appelé 'KOMBIT' (KBT). Kombit est proposé comme devise numerique avec
           des mécanismes de vote démocratique pour des projets de développement d'affaires communs en Haïti.</a></p>
 
-      <p id="english"> <a href="" lang="en" style="color:black">In 1821, Greece sent a plea to Haiti for help in their struggles for Independence from the Ottoman Empire rule. Haiti, embattled and still struggling against ransoms since its own Independence, answered the call and sent moral support including 25 tons of coffee. Kafe Kombit: ‘Kombit’ aka 'Konbit' is a Haitian Kreyol term used to define a community working together towards a common goal. Kombit platform Tokens was developed by Haitian Canadian architectural technologist, Steve Michel
-          and presented by Finnish visual artist Petri Saarikko during the Platforms Project in Athens in May 2017. Kombit is proposed as a cryptocurrency backed token with democratic voting to fund development projects in Haiti.</a></p>
+      <p id="english"> <a href="" lang="en" style="color:black">In 1821, Greece sent a plea to Haiti for help in their struggles for Independence from the Ottoman Empire rule. Haiti, embattled and still struggling against ransoms since its own Independence, answered the call and sent moral support including 25 tons of coffee. Kafe Kombit: ‘Kombit’ aka 'Konbit' is a Haitian Kreyol term used to define a community working together towards a common goal. Kombit platform Tokens was developed by Haitian Canadian architectural technologist, and presented by Finnish visual artist Petri Saarikko during the Platforms Project in Athens in May 2017. Kombit is proposed as a cryptocurrency backed token with democratic voting to fund development projects in Haiti.</a></p>
 
     </div>
     <div class="col-md-3"></div>
