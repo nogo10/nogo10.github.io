@@ -12,6 +12,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-color/2.1.2/jquery.color.min.js"></script>
+  <script src="http://rawgit.com/ethereum/web3.js/0.16.0/dist/web3.min.js"></script>
   <script>
     function myFunction() {
       var x = document.getElementById('myDIV');
@@ -37,7 +38,15 @@
   }
 
   // Now you can start your app & access web3 freely:
-  startApp()
+  if(!Web3.isConnected()) {
+  
+   console.log("use chrome or chromium web browser or myEtherwallet")
+
+} else {
+ 
+  console.log(Web3.currentProvider)
+  
+}
 
 });
   </script>
@@ -86,7 +95,7 @@
       </div>
       <h2 style="font-weight: light;">The Ethereum powered pay it forward initiative</h2>
       <p><img style="width:50%; margin:auto" src="https://cdn.discordapp.com/attachments/234428176552427520/311099665321820161/kafekombit.png"></p>
-      <h3 style="text-decoration: font-weight: bold;">Token launch is done and new founctionalities are on the way. If you participated in the Platforms 2017 or contacted the developers, you can check copy paste your QR code into the form below and check your token balance.</h3>
+      <h3 style="text-decoration: font-weight: bold;">Token launch is done and new founctionalities are on the way. If you participated in the Platforms 2017 or contacted the developers, you can check copy paste your QR code into the form below and check your token balance. Kombit tokens are intended to be used as votes to decide democratically on future development projects for sanitation, health, agriculture etc.</h3>
       <h3 style="text-decoration: underline;font-weight: bold;"> <a href="https://ropsten.etherscan.io/address/0x284057ca9b16d0bbc8722601df1eede6e56a60d9">blockchain kombit address</a></h3>
       <p></p>
       <p></p>
