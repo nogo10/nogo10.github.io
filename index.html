@@ -12,7 +12,6 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-color/2.1.2/jquery.color.min.js"></script>
-  <script src="https://rawgit.com/ethereum/web3.js/0.16.0/dist/web3.min.js"></script>
   <script>
     function myFunction() {
       var x = document.getElementById('myDIV');
@@ -28,9 +27,9 @@
     window.addEventListener('load', function() {
       var Web3 = require('web3');
   // Checking if Web3 has been injected by the browser (Mist/MetaMask)
-  if (typeof web3 !== 'undefined') {
+  if (typeof Web3 !== 'undefined') {
     // Use Mist/MetaMask's provider
-    window.web3 = new Web3(web3.currentProvider);
+    window.Web3 = new Web3(Web3.currentProvider);
   } else {
     console.log('No web3? You should consider trying MetaMask!')
     // fallback - use your fallback strategy (local node / hosted node + in-dapp id mgmt / fail)
@@ -44,7 +43,7 @@
 
 } else {
  
-  console.log("good to go go");
+  console.log("good to go go?");
   
 }
 
@@ -124,7 +123,7 @@
       <p id="francais"><a href="" lang="fr" style="color:black">En 1821, Grèce a envoyé en Haïti un plaidoyer pour trouver de l'aide dans leurs combats pour l'indépendance sous le règne de l'Empire Ottoman. Haïti, sur les remparts, luttant encore contre les rançons depuis sa propre indépendance, a répondu a l'appel et a envoyé son soutien moral y compris 25 tonnes de leur café. Kafe Kombit (FONDATION BLOCS CHAINES COMMUNES) Kafe Kombit présente un instrument de développement appelé 'KOMBIT' (KBT). Kombit est proposé comme devise numerique avec
           des mécanismes de vote démocratique pour des projets de développement d'affaires communs en Haïti.</a></p>
 
-      <p id="english"> <a href="" lang="en" style="color:black">In 1821, Greece sent a plea to Haiti for help in their struggles for Independence from the Ottoman Empire rule. Haiti, embattled and still struggling against ransoms since its own Independence, answered the call and sent moral support including 25 tons of coffee. Kafe Kombit: ‘Kombit’ aka 'Konbit' is a Haitian Kreyol term used to define a community working together towards a common goal. Kombit platform Tokens was developed by Haitian Canadian architectural technologist, and presented by Finnish visual artist Petri Saarikko during the Platforms Project in Athens in May 2017. Kombit is proposed as a cryptocurrency backed token with democratic voting to fund development projects in Haiti.</a></p>
+      <p id="english"> <a href="" lang="en" style="color:black">In 1821, Greece sent a plea to Haiti for help in their struggles for Independence from the Ottoman Empire rule. Haiti, embattled and still struggling against ransoms since its own Independence, answered the call and sent moral support including 25 tons of coffee. Kafe Kombit: ‘Kombit’ aka 'Konbit' is a Haitian Kreyol term used to define a community working together towards a common goal. Kombit platform Tokens was developed by a Haitian Canadian architectural technologist, and presented by a Finnish visual artist during the Platforms Project in Athens in May 2017. Kombit is proposed as a cryptocurrency backed token with democratic voting to fund development projects in Haiti.</a></p>
 
     </div>
     <div class="col-md-3"></div>
