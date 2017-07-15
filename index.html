@@ -263,7 +263,7 @@
           $('#kbt').click(function(e) {
             e.preventDefault();
             var myaddress = document.getElementById("myinput").value;
-
+            console.log("koko");
             document.getElementById("kbt").innerHTML = contract.balanceOf(myaddress);
 
           });
@@ -333,7 +333,7 @@
     <div class="col-md-4"></div>
     <div class="col-md-4">
       <div style="width: 100%">
-        <input id= "myinput" type="text" class="userData text form-control" value="paste the json data from the qr code reader result">
+        <input id="myinput" type="text" class="userData text form-control" value="paste the json data from the qr code reader result">
         <button id="kbt" class="userData btn-lg" style="width: 100%; background:#111111; color:white"><a href id="eng">Check your Kombit (Kbt) balance</a><a href="" lang="en" style="visibility: visible">Check your Kombit coin balance</a><a href="" lang="fr">Vérifiez vos Kombits</a><a href="" lang="ht">Checke balans kob kombit</a></button>
       </div>
       <div class="col-md-4"></div>
