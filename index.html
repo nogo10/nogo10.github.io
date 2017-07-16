@@ -256,8 +256,10 @@
           "type": "event"
         }];
 
-        var contract = (function(){ web3.eth.contract(abi).at('0x284057ca9b16d0bbc8722601df1eede6e56a60d9')});
-
+        var contract = (function() {
+          web3.eth.contract(abi).at('0x284057ca9b16d0bbc8722601df1eede6e56a60d9')
+        });
+        console.log(contract);
         /*         edit below                                 */
         $(function() {
           $('#kbt').click(function(e) {
