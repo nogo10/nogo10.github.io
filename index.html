@@ -258,12 +258,15 @@
 
 
 
-        var contract = (function(error, result) {
-           if(!error)
-           return  web3.eth.contract(abi).at('0x284057ca9b16d0bbc8722601df1eede6e56a60d9')
-           else console.log(error);
-        });
-        
+      /*  var contract = (function(error, result) {
+          if (!error) {
+            var myContract = web3.eth.contract(abi).at('0x284057ca9b16d0bbc8722601df1eede6e56a60d9');
+            return myContract;
+          }
+
+          else console.log(error);
+        });*/
+
         console.log(contract);
         /*         edit below                                 */
         $(function() {
@@ -271,7 +274,7 @@
             e.preventDefault();
             var myaddress = document.getElementById("myinput").value;
             console.log("koko");
-            document.getElementById("kbt").innerHTML.contract.balanceOf(myaddress);
+            document.getElementById("kbt").innerHTML.web3.eth.contract(abi).at('0x284057ca9b16d0bbc8722601df1eede6e56a60d9').balanceOf(myaddress);
 
           });
         });
