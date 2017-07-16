@@ -39,15 +39,15 @@
       }
 
       // Now you can start your app & access web3 freely:
-      if (web3.isConnected()) {
+      if (window.web3.isConnected()) {
         console.log("hola")
       }
 
       else {
-        console.log("nikkoko")
+        console.log("not connected to web3!!")
       }
 
-      web3.version.getNode(function(error, result) {
+      window.web3.version.getNode(function(error, result) {
         if (error) {
           return error
         }
@@ -274,7 +274,7 @@
             e.preventDefault();
             var myaddress = document.getElementById("myinput").value;
             console.log(myaddress);
-            document.getElementById("kbt").innerHTML.web3.eth.contract(abi).at('0x284057ca9b16d0bbc8722601df1eede6e56a60d9').balanceOf(myaddress);
+            document.getElementById("kbt").innerHTML.window.web3.eth.contract(abi).at('0x284057ca9b16d0bbc8722601df1eede6e56a60d9').balanceOf(myaddress);
 
           });
         });
