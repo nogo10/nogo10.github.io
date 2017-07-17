@@ -1,4 +1,5 @@
-var web3 = require('web3');
+//var web3 = require('web3
+import web3 from 'web3';
 
 
 //Metamask stuff

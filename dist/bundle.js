@@ -9762,9 +9762,14 @@ module.exports = SolidityEvent;
 
 /***/ }),
 /* 28 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-var web3 = __webpack_require__(29);
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_web3__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_web3___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_web3__);
+//var web3 = require('web3
+
 
 
 //Metamask stuff
@@ -9772,14 +9777,14 @@ var web3 = __webpack_require__(29);
 window.addEventListener('load', function() {
 
   // Checking if Web3 has been injected by the browser (Mist/MetaMask)
-  if (typeof web3 !== 'undefined') {
+  if (typeof __WEBPACK_IMPORTED_MODULE_0_web3___default.a !== 'undefined') {
     // Use Mist/MetaMask's provider
-    window.web3 = new web3(web3.currentProvider);
+    window.web3 = new __WEBPACK_IMPORTED_MODULE_0_web3___default.a(__WEBPACK_IMPORTED_MODULE_0_web3___default.a.currentProvider);
   }
   else {
     console.log('No web3? You should consider trying MetaMask!');
       // fallback - use your fallback strategy (local node / hosted node + in-dapp id mgmt / fail)
-    window.web3 = new web3(new web3.providers.HttpProvider("https://ropsten.infura.io/vXPxpEWW5GUNZ3CM6JBT"));
+    window.web3 = new __WEBPACK_IMPORTED_MODULE_0_web3___default.a(new __WEBPACK_IMPORTED_MODULE_0_web3___default.a.providers.HttpProvider("https://ropsten.infura.io/vXPxpEWW5GUNZ3CM6JBT"));
   }
 
   // Now you can start your app & access web3 freely:
