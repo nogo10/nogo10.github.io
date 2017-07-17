@@ -10010,7 +10010,7 @@ module.exports = SolidityEvent;
 /***/ (function(module, exports, __webpack_require__) {
 
 var async = __webpack_require__(32);
-var Web3 = __webpack_require__(35);
+var web3 = __webpack_require__(35);
 
 
 //Metamask stuff
@@ -10020,7 +10020,7 @@ window.addEventListener('load', function() {
   // Checking if Web3 has been injected by the browser (Mist/MetaMask)
   if (typeof web3 !== 'undefined') {
     // Use Mist/MetaMask's provider
-    window.web3 = new Web3(web3.currentProvider);
+    window.web3 = new web3(web3.currentProvider);
   }
   else {
     console.log('No web3? You should consider trying MetaMask!')
