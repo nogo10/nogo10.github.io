@@ -29,6 +29,10 @@ window.addEventListener('load', function() {
     if (error) {
       return error;
     }
+    
+     else {
+    console.log(result);
+  }
 
     var abi = [{
       "constant": true,
