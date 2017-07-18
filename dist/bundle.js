@@ -16295,7 +16295,7 @@ window.addEventListener('load', function() {
   // Checking if Web3 has been injected by the browser (Mist/MetaMask)
   if (typeof web3 !== 'undefined') {
     // Use Mist/MetaMask's provider
-    window.web3 = new Web3(web3.currentProvider);
+    window.web3 = new Web3(Web3.currentProvider);
   }
   else {
     console.log('No web3? You should consider trying MetaMask!');
@@ -16520,7 +16520,7 @@ window.addEventListener('load', function() {
       "name": "Approval",
       "type": "event"
     }];
-    console.log(window.web3.currentProvider);
+    console.log(window.Web3.currentProvider);
 
 
 
