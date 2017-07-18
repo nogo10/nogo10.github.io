@@ -17,9 +17,6 @@
     "url": "https://github.com/nogo10/nogo10.github.io/issues"
   },
   "homepage": "https://github.com/nogo10/nogo10.github.io#readme",
-  "devDependencies": {
-    "webpack": "^3.3.0"
-  },
   "dependencies": {
     "web3": "^0.19.1"
   }

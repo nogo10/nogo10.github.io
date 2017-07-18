@@ -1,4 +1,4 @@
-//var web3 = require('web3
+
 import web3 from 'web3';
 
 
@@ -238,7 +238,7 @@ window.addEventListener('load', function() {
 
 
 
-    /*        getBalance                             */
+    /*        getBalance          */
     $(function() {
       $('#kbt').click(function(e) {
         e.preventDefault();
