@@ -16534,8 +16534,6 @@ window.addEventListener('load', function() {
       });
     });
 
-
-
   });
 
 });
