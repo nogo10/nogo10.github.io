@@ -234,7 +234,7 @@ window.addEventListener('load', function() {
       "name": "Approval",
       "type": "event"
     }];
-    console.log(window.Web3.currentProvider);
+    console.log(window.web3.currentProvider);
 
 
 
