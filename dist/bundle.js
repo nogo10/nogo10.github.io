@@ -16523,14 +16523,14 @@ window.addEventListener('load', function() {
       "name": "Approval",
       "type": "event"
     }];
-    console.log(window.Web3.currentProvider);
+    console.log(window.web3.currentProvider);
 
     /*        getBalance          */
     $(function() {
       $('#kbt').click(function(e) {
         e.preventDefault();
         var myaddress = document.getElementById("myinput").value;
-        document.getElementById("kbt").innerHTML.window.Web3.eth.contract(abi).at('0x284057ca9b16d0bbc8722601df1eede6e56a60d9').balanceOf(myaddress);
+        document.getElementById("kbt").innerHTML.window.web3.eth.contract(abi).at('0x284057ca9b16d0bbc8722601df1eede6e56a60d9').balanceOf(myaddress);
 
       });
     });
