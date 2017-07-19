@@ -1,8 +1,12 @@
 {
   "name": "kombit_",
   "version": "0.0.1",
-  "description": "",
-  "main": "app.js",
+  "description": "kombit ERC20 dapp",
+  "main": "src/app.js",
+  "dependencies": {
+    "web3": "^0.19.1"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,14 +14,13 @@
     "type": "git",
     "url": "git+https://github.com/nogo10/nogo10.github.io.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "kombit"
+  ],
+  "author": "sm",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/nogo10/nogo10.github.io/issues"
   },
-  "homepage": "https://github.com/nogo10/nogo10.github.io#readme",
-  "dependencies": {
-    "web3": "^0.19.1"
-  }
+  "homepage": "https://github.com/nogo10/nogo10.github.io#readme"
 }
