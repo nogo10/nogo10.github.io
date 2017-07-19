@@ -1,7 +1,7 @@
 {
   "name": "kombit_",
   "version": "0.0.1",
-  "description": "kombit ERC20 dapp",
+  "description": "kombit a ERC20 dapp",
   "main": "src/app.js",
   "dependencies": {
     "web3": "^0.19.1"
