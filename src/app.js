@@ -17,7 +17,7 @@ window.addEventListener('load', function() {
   }
 
   // Now you can start your app & access web3 freely:
-  if (window.web3.isConnected()) {
+  if (web3.isConnected()) {
     console.log("hola");
   }
 
