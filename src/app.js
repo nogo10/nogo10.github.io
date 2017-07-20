@@ -17,7 +17,7 @@ window.addEventListener('load', function() {
   }
 
   // Now you can start your app & access web3 freely:
-  if (Web3.net.peerCount()) {
+  if (Web3.net.peerCount>0) {
     console.log("hola");
   }
 
