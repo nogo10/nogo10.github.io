@@ -17,7 +17,7 @@ window.addEventListener('load', function() {
   }
 
   // Now you can start your app & access web3 freely:
-  if (Web3.currentProvider) {
+  if (web3.currentProvider) {
     console.log("hola");
   }
 
