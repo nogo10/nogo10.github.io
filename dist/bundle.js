@@ -16303,7 +16303,7 @@ window.addEventListener('load', function() {
   }
 
   // Now you can start your app & access web3 freely:
-  if (web3.currentProvider) {
+  if (Web3.currentProvider) {
     console.log("hola");
   }
 
