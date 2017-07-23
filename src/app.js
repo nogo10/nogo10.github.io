@@ -20,7 +20,8 @@ window.addEventListener('load', function() {
   if (window.web3.isConnected) {
     console.log("hola");
     console.log(window.web3.version);
-    window.web3.eth.getAccounts(console.log);
+    console.log(window.web3.eth.getAccounts);
+    console.log(window.web3.net.peerCount);
   }
 
   else {
