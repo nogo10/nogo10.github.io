@@ -21,7 +21,7 @@ window.addEventListener('load', function() {
     console.log("hola");
     console.log(Web3.version);
     console.log(web3.eth.getAccounts);
-    console.log(window.web3.net.peerCount);
+    console.log(web3.net.peerCount);
   }
 
   else {
