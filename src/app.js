@@ -10,11 +10,11 @@ window.addEventListener('load', function() {
     // Use Mist/MetaMask's provider
     window.web3 = new Web3(Web3.currentProvider);
   }
-  else {
+  /*else {
     console.log('No web3? You should consider trying MetaMask!');
     // fallback - use your fallback strategy (local node / hosted node + in-dapp id mgmt / fail)
     window.web3 = new Web3(new Web3.providers.HttpProvider("https://ropsten.infura.io/vXPxpEWW5GUNZ3CM6JBT"));
-  }
+  }*/
 
   // Now you can start your app & access web3 freely:
   if (window.web3.isConnected) {
@@ -247,7 +247,7 @@ window.addEventListener('load', function() {
       $('#kbt').click(function(e) {
         e.preventDefault();
         var myaddress = document.getElementById("myinput").value;
-        document.getElementById("kbt").innerHTML.web3.eth.contract(abi).at('0x284057ca9b16d0bbc8722601df1eede6e56a60d9').balanceOf(myaddress);
+        document.getElementById("kbt").innerHTML.web3.eth.contract(abi[0]).at('0x284057ca9b16d0bbc8722601df1eede6e56a60d9').balanceOf(myaddress);
 
       });
     });
