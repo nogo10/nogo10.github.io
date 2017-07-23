@@ -19,9 +19,9 @@ window.addEventListener('load', function() {
   // Now you can start your app & access web3 freely:
   if (window.web3.isConnected) {
     console.log("hola");
-    console.log(window.web3.version);
-    console.log(window.web3.eth.getAccounts);
-    console.log(window.web3.net.peerCount);
+    console.log(web3.version);
+    console.log(web3.eth.getAccounts);
+    console.log(web3.net.peerCount);
   }
 
   else {
