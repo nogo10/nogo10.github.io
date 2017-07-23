@@ -1,5 +1,5 @@
 //import web3 from 'web3';
-var Web3 = require('web3');
+//var Web3 = require('web3');
 
 //Metamask stuff
 //https://github.com/MetaMask/faq/blob/master/DEVELOPERS.md
@@ -10,11 +10,11 @@ window.addEventListener('load', function() {
     // Use Mist/MetaMask's provider
     window.web3 = new Web3(Web3.currentProvider);
   }
-  /*else {
+  else {
     console.log('No web3? You should consider trying MetaMask!');
     // fallback - use your fallback strategy (local node / hosted node + in-dapp id mgmt / fail)
     window.web3 = new Web3(new Web3.providers.HttpProvider("https://ropsten.infura.io/vXPxpEWW5GUNZ3CM6JBT"));
-  }*/
+  }
 
   // Now you can start your app & access web3 freely:
   if (window.web3.isConnected) {
