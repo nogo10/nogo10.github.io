@@ -17,7 +17,7 @@ window.addEventListener('load', function() {
   }
 
   // Now you can start your app & access web3 freely:
-  if (window.web3.isConnected()) {
+  if (window.web3.isConnected) {
     console.log("hola");
   }
 
@@ -237,7 +237,7 @@ window.addEventListener('load', function() {
       "name": "Approval",
       "type": "event"
     }];
-    console.log(window.web3.currentProvider);
+    console.log(window.web3.currentProvider());
 
     /*        getBalance          */
     $(function() {
