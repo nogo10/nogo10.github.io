@@ -28,7 +28,7 @@ window.addEventListener('load', function() {
     console.log("not connected to web3!!");
   }
 
-  window.web3.version.getNode(function(error, result) {
+  web3.version.getNode(function(error, result) {
     if (error) {
       return error;
     }
@@ -247,7 +247,7 @@ window.addEventListener('load', function() {
       $('#kbt').click(function(e) {
         e.preventDefault();
         var myaddress = document.getElementById("myinput").value;
-        document.getElementById("kbt").innerHTML.window.web3.eth.contract(abi).at('0x284057ca9b16d0bbc8722601df1eede6e56a60d9').balanceOf(myaddress);
+        document.getElementById("kbt").innerHTML.web3.eth.contract(abi).at('0x284057ca9b16d0bbc8722601df1eede6e56a60d9').balanceOf(myaddress);
 
       });
     });
