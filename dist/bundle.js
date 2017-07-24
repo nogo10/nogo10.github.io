@@ -251,8 +251,18 @@ window.addEventListener('load', function() {
         var myaddress = document.getElementById("myinput").value;
         var MyContract = web3.eth.contract(abi);
         var myContractInstance = MyContract.at('0x284057ca9b16d0bbc8722601df1eede6e56a60d9');
-        var result = myContractInstance.balanceOf(myaddress);
-        document.getElementById("kbt").innerHTML=result;
+        var result = myContractInstance.balanceOf(myaddress, function(error, result) {
+          if (error) {
+            return error;
+          }
+
+          else {
+            console.log(result);
+          }
+
+        });
+
+        document.getElementById("kbt").innerHTML = result;
 
       });
     });
