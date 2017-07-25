@@ -22,7 +22,7 @@ window.addEventListener('load', function() {
     console.log(web3.version);
     console.log(web3.eth.getAccounts());
     if (web3.eth.getAccounts() == undefined) {
-      document.getElementById("kbt").innerHTML = "please log into your MetaMask ropsten account";
+      document.getElementById("kbt").innerHTML = "please log into your MetaMask Ropsten account";
     }
     var defaultAccount = web3.eth.defaultAccount;
     console.log(defaultAccount);
@@ -63,23 +63,25 @@ window.addEventListener('load', function() {
       $('#kbt').click(function(e) {
         e.preventDefault();
         var myaddress = document.getElementById("myinput").value;
-        if (!web3.isAddress(myaddress)){
-           document.getElementById("kbt").innerHTML =  "please enter valid address";
+        if (!web3.isAddress(myaddress)) {
+          document.getElementById("kbt").innerHTML = "please enter valid address";
         }
-        var MyContract = web3.eth.contract(abi);
-        var myContractInstance = MyContract.at('0x284057ca9b16d0bbc8722601df1eede6e56a60d9');
-        var result = myContractInstance.balanceOf(myaddress, function(error, result) {
-          if (error) {
-            return error;
-          }
+        else { //do the whole thing
+          var MyContract = web3.eth.contract(abi);
+          var myContractInstance = MyContract.at('0x284057ca9b16d0bbc8722601df1eede6e56a60d9');
+          var result = myContractInstance.balanceOf(myaddress, function(error, result) {
+            if (error) {
+              return error;
+            }
 
-          else {
-            console.log(result); console.log(result.isBigNumber)// is a BigNumber?
-            document.getElementById("kbt").innerHTML = result.valueOf() + "Kbts";
-          }
+            else {
+              console.log(result);
+              console.log(result.isBigNumber) // is a BigNumber?
+              document.getElementById("kbt").innerHTML = result.valueOf() + "Kbts";
+            }
 
-        });
-
+          });
+        }
       });
     });
 
