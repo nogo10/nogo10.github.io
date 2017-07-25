@@ -21,8 +21,8 @@ window.addEventListener('load', function() {
     console.log("Your browser connected to web3");
     console.log(web3.version);
     console.log(web3.eth.getAccounts());
-    if (web3.eth.getAccounts()== undefined){ 
-      document.getElementById("kbt").innerHTML = "please log into your MetaMask ropsten acoount";
+    if (web3.eth.getAccounts() == undefined) {
+      document.getElementById("kbt").innerHTML = "please log into your MetaMask ropsten account";
     }
     var defaultAccount = web3.eth.defaultAccount;
     console.log(defaultAccount);
@@ -72,11 +72,10 @@ window.addEventListener('load', function() {
 
           else {
             console.log(result);
+            document.getElementById("kbt").innerHTML = result.toString() + "Kbts";
           }
 
         });
-
-        document.getElementById("kbt").innerHTML = result.toString()  + "Kbts" ;
 
       });
     });
