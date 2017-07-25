@@ -64,6 +64,9 @@ window.addEventListener('load', function() {
       $('#kbt').click(function(e) {
         e.preventDefault();
         var myaddress = document.getElementById("myinput").value;
+        if (!web3.isAddress(myaddress)){
+           document.getElementById("kbt").innerHTML =  "please enter valid address";
+        }
         var MyContract = web3.eth.contract(abi);
         var myContractInstance = MyContract.at('0x284057ca9b16d0bbc8722601df1eede6e56a60d9');
         var result = myContractInstance.balanceOf(myaddress, function(error, result) {
@@ -72,8 +75,8 @@ window.addEventListener('load', function() {
           }
 
           else {
-            console.log(result);
-            document.getElementById("kbt").innerHTML = result.toString() + "Kbts";
+            console.log(result); console.log(result.isBigNumber)// is a BigNumber?
+            document.getElementById("kbt").innerHTML = result.valueOf() + "Kbts";
           }
 
         });
