@@ -77,7 +77,7 @@ window.addEventListener('load', function() {
 
         });
 
-        document.getElementById("kbt").innerHTML = result;
+        document.getElementById("kbt").innerHTML = result.toString()  + "Kbts" ;
 
       });
     });
