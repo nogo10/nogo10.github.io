@@ -2,7 +2,7 @@
 //import web3 from 'web3';
 //var Web3 = require('web3');
 
-//Metamask stuff
+//Metamask stuff 
 //https://github.com/MetaMask/faq/blob/master/DEVELOPERS.md
 window.addEventListener('load', function() {
 
@@ -29,6 +29,7 @@ window.addEventListener('load', function() {
 
   else {
     console.log("not connected to web3!!");
+    window.web3 = new Web3(new Web3.providers.HttpProvider("https://ropsten.infura.io/vXPxpEWW5GUNZ3CM6JBT"));
   }
 
   web3.version.getNode(function(error, result) {
